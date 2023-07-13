@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:ui_assingmnet/screens/account_info.dart';
 import 'package:ui_assingmnet/screens/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_assingmnet/screens/login_screen.dart';
 import 'package:ui_assingmnet/screens/my_assets.dart';
 import 'package:ui_assingmnet/screens/profile.dart';
+import 'package:ui_assingmnet/screens/sign_up.dart';
+import 'package:ui_assingmnet/screens/splash_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -29,6 +32,7 @@ class MyApp extends StatelessWidget {
           onBackground: Color.fromRGBO(0, 0, 0, 1),
           surface: Color.fromRGBO(246, 246, 249, 1),
           onSurface: Color.fromRGBO(246, 246, 249, 1),
+          tertiary: Color.fromRGBO(130, 130, 130, 1),
         ),
         appBarTheme: const AppBarTheme(
           foregroundColor: Color.fromRGBO(0, 0, 0, 1),
@@ -50,7 +54,7 @@ class MyApp extends StatelessWidget {
               fontSize: 22),
         ),
       ),
-      home: const AccountInfo(),
+      home: const SplashScreen(),
     );
   }
 }
